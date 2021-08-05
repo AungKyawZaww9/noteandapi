@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #6e3b3b;
+
+    display: flex;
+    flex-wrap:wrap;
+    margin:0;
+}
+
+.add{
+    background-color: #be6a15;
+    color:#fff;
+
+    border:none;
+    border-radius:10px;
+    padding:10px 15px;
+
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+
+.container{
+    margin:80px 50px;
+
+    position: relative;
+    overflow:hidden;
+}
+
+.container img{
+    width:250px;
+    height: 250px;
+
+    object-fit: cover;
+
+
+}
+
+.note{
+    width:250px;
+    height: 100px;
+    background-color: #ac3f21;
+
+    /*transform: translateY(-100%);*/
+
+    overflow: hidden;
+}
+
+.note .tools{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-note{
+    background-color: #be6a15;
+    border-radius: 5px;
+}
+
+.dele-note{
+    background-color: #be6a15;
+    border-radius: 5px;
+    position:absolute;
+    top:56%;
+    left:92.1%;
+}
+button{
+    background-color: transparent;
+    color:#fff;
+    border:none;
+    padding:5px;
+}
+button:active{
+    color:#f3cf7a;
+}
+
+button:focus{
+    outline:0;
+}
+
+.note textarea{
+    width:100%;
+    height: inherit;
+    background-color: #ac3f21;
+    color:#f3cf7a;
+    font-family: 'Style Script', cursive;
+    font-size:20px;
+    border:none;
+
+    margin:2px 10px;
+}
+
+.note textarea:focus{
+    outline:none;
+}
+
+.main{
+    width:90%;
+    height: 30%;
+    background-color: rgba(0,0,0,2);
+    opacity: 0.3;
+
+    position:absolute;
+    bottom:30%;
+    left:0;
+
+    transform: translateX(-100%);
+    transition:all 0.5s;
+
+    padding:10px;
+    font-size: 20px;
+    font-family: 'Style Script', cursive;
+    color:#fff;
+    text-align: center;
+
+}
+
+.main.slide{
+    transform: translateX(0);
+}
+
+.hidden{
+    display: none;
+}
+
